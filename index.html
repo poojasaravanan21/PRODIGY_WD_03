@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Tabletop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="icon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="game-container">
+        <h1 class="title">Tic-Tac-Toe TableTop</h1>
+        <div class="difficulty">
+            <button onclick="setDifficulty('easy')">Easy</button>
+            <button onclick="setDifficulty('medium')">Medium</button>
+            <button onclick="setDifficulty('hard')">Hard</button>
+        </div>
+        <div id="notification" class="notification"></div>
+        <div class="grid-size">
+            <label for="grid-size">Grid Size:</label>
+            <select id="grid-size" onchange="changeGridSize()">
+                <option value="3">3x3</option>
+                <option value="4">4x4</option>
+                <option value="20">20x20</option>
+            </select>
+        </div>
+        <div id="board" class="board"></div>
+        <button id="reset">Reset</button>
+        <div class="info">
+            <table class="about">
+                <tr><th>About</th></tr>
+                <tr><td>A relatively simple game usually played on a grid of 3-by-3 squares, tic-tac-toe is mainly enjoyed by children. Tic-tac-toe can be made significantly more complex by increasing the size of the board to 4-by-4, 5-by-5, or even up to a 20-by-20 grid.The gameplay is the same if you are playing on a 4-by-4 grid. The "X" player goes first. And, players alternate placing Xs and Os on the board until a row is completed horizontally, vertically, or diagonally, or all 16 squares are filled. hoose your difficulty and try to win! Tic-tac-toe can be also be played on a 5-by-5 grid with each player trying to get five in a row.
+                </td></tr>
+            </table>
+            <table class="instructions">
+                <tr><th>Instructions</th></tr>
+                <tr><td>Click on a cell to make your move. The goal is to get three of your marks in a row, column, or diagonal. Have the first player go first. Though traditionally, the first player goes with "X", you can allow the first player to decide whether to go with "X"s or to go with "O"s. These symbols will be placed on the table, in an attempt to have three of them in a row. If you're going first, then the best move you can make is to move into the center. This will maximize your chances of winning then the second player should put down his symbol, which will be different from the symbol of the first player. The second player can either try to block the first player from creating a row of three or focus on creating their row of three. Ideally, the player can do both. Good luck!</td></tr>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
